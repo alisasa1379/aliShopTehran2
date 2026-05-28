@@ -3,7 +3,7 @@ footer {
     height: 400px;
     background-color: #2b2b2b;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;

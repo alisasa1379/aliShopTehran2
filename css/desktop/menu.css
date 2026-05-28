@@ -1,0 +1,42 @@
+.showBtn {
+ display: none;
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    nav {
+        height: 100%;
+        ul{
+            width: 100%;
+            height: 100%;
+            flex-flow: row nowrap;
+            justify-content: center;
+            li{
+                width: fit-content;
+                a{
+                    transition: 500ms;
+                    &:hover {
+                        color: gold;
+                    }
+                }
+                &:hover {
+                    background-color: unset;
+                }
+            }
+        }
+    }
+
+    .closeBtn {
+        display: none;
+    }
+}
+
+input#show:checked ~ .menu {
+    left: 0;
+}
+
+input#show , input#close {
+    display: none;
+}

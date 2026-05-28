@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ali shop</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <label for="show" class="showBtn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <input type="radio" name="menu" id="show" />
+    <input type="radio" name="menu" id="close" />
+
+    <div class="menu">
+      <label for="close" class="closeBtn">&times;</label>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">gellery</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="./images/slider/slide1.jpg" alt="swiper" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/slider/slide2.jpg" alt="swiper"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./images/slider/slide3.jpg" alt="swiper" /></a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="products" id="products">
+    </div>
+
+    <footer>
+      <div></div>
+      <div></div>
+      <div></div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
